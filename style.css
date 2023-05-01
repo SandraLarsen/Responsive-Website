@@ -8,65 +8,72 @@ p{
 
 h1, h2, h3{
     color: #6b6b6b;
-    font-weight: 50;
 }
 
 a {
     text-decoration: none;
     color: #999;
   }
+   
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding-top: 30px;
+    max-width: 1300px;
+}
 
 li {
+    margin: auto;
     list-style-type: none;
+    padding: 20px;
 }
-   
+ 
 .logo {
     display: flex;
 }
   
-.container {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-  
-.container ul {
-    display: flex;
-}
-  
-.container a {
+
+.navbar a {
     padding: 9px;
     margin: 10px;
-}
-  
-.navbar a:hover {
-    color: black;
 }
 
 .text {
     display: flex;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
+    max-width: 1300px;
 }
 
 .text h2{ 
-    font-size: xx-large;
+    font-size: xx-large; /* change font */
 }
 
-.gallery ul {
+.gallery{
     display: flex;
+    justify-content: center;
     margin: auto;
 }
 
-.gallery li {
-    padding: 10px;
+.gallery li{
     text-align: left;
-    width: 30%;
+    max-width: 400px;
 }
 
 .gallery img {
-    width: 100%;
-    height: 50%;
+    width: 400px;
+    height: 250px
+}
 
+#team {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin: auto;
 }

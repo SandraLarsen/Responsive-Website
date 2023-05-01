@@ -1,12 +1,21 @@
+html{height: 100%;}
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
 }
 
 p{
     color: #999
 }
 
-h1, h2, h3{
+h1 {
+    font-family: 'Noto Serif Hebrew', serif;
+    font-weight: 100;
+    color: #6b6b6b;
+}
+
+h3{
+    font-family: 'Noto Serif Hebrew', serif;
+    font-weight: 300;
     color: #6b6b6b;
 }
 
@@ -20,7 +29,6 @@ ul {
     list-style-type: none;
     margin: auto;
     padding-top: 30px;
-    max-width: 1300px;
 }
 
 li {
@@ -29,6 +37,15 @@ li {
     padding: 20px;
 }
  
+.header{
+    font-family: 'Noto Serif Hebrew', serif;
+    font-weight: 200;
+    font-size: 80px;
+    color: #6b6b6b;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .logo {
     display: flex;
 }
@@ -44,11 +61,16 @@ li {
     margin: 10px;
 }
 
+.navbar a:hover{
+    color: #282828;
+    text-decoration: underline;
+}
+
 .text {
     display: flex;
     text-align: center;
     margin: auto;
-    max-width: 1300px;
+    max-width: 1000px;
 }
 
 .text h2{ 
@@ -59,6 +81,7 @@ li {
     display: flex;
     justify-content: center;
     margin: auto;
+    max-width: max-content;
 }
 
 .gallery li{
@@ -76,4 +99,56 @@ li {
     width: 300px;
     justify-content: center;
     margin: auto;
+    padding-bottom: 80px;
+}
+
+footer { 
+  padding: 20px;
+  margin: 0;
+  background-color: #282828;
+  color: #777;
+  width: 100%;
+}
+footer h3 {
+  color: antiquewhite;
+}
+footer a{ 
+  text-decoration: none;
+  color: #777;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer i{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  margin-top: 0;
+}
+.footer-container {
+  margin: 0 auto;
+}
+.footer-main {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.footer-column {
+  flex-basis: 200px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-heading {
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  display: block;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+.footer-section {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  width: max-content;
 }

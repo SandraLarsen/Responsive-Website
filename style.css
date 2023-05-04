@@ -1,4 +1,7 @@
-html{height: 100%;}
+html{
+  height: 100%;
+}
+
 body {
     height: 100%;
 }
@@ -74,7 +77,7 @@ li {
 }
 
 .text h2{ 
-    font-size: xx-large; /* change font */
+    font-size: xx-large; 
 }
 
 .gallery{
@@ -109,28 +112,34 @@ footer {
   color: #777;
   width: 100%;
 }
+
 footer h3 {
   color: antiquewhite;
 }
+
 footer a{ 
   text-decoration: none;
   color: #777;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 footer i{
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 50px;
   margin-top: 0;
 }
+
 .footer-container {
   margin: 0 auto;
 }
+
 .footer-main {
   display: flex;
   margin-bottom: 4rem;
 }
+
 .footer-column {
   flex-basis: 200px;
   flex-grow: 1;
@@ -146,9 +155,49 @@ footer i{
   padding: 5px 10px;
   margin: 0 auto;
 }
+
 .footer-section {
   display: flex;
   text-align: center;
   margin: 0 auto;
   width: max-content;
+}
+
+@media only screen and (min-width: 769px){.dropdown {display: none;}}
+@media only screen and (max-width: 768px) {
+  .nav-desktop{
+    display: none;
+  }
+
+  .dropdown {
+    padding: 9px;
+    margin: 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery ul{
+    flex-direction: column;
+  }
+
+  #team {
+    flex-direction: column;
+  }
 }

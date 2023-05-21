@@ -63,13 +63,12 @@ a {
 
 .text {
     display: flex;
+    flex-direction: column;
     text-align: center;
     margin: auto;
-    max-width: 1000px;
-}
-
-.text h2{ 
-    font-size: xx-large; 
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
 }
 
 .gallery {
